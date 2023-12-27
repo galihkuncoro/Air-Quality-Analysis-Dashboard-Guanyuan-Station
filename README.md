@@ -1,5 +1,8 @@
 # Data Analysis Project: Air Quality Guanyuan
 
+## Live Dashboard
+https://air-quality-analysis-dashboard-guanyuan-station-uf2zqwxyxn44od.streamlit.app/
+
 ## Project Overview
 This project, which is a submission for Dicoding's "Learn Data Analysis with Python" course, centers on the analysis of air quality data, specifically emphasizing PM2.5 concentrations gathered from the Wanshouxigong station. The primary aim is to reveal patterns, seasonal fluctuations, and the influence of diverse weather conditions on air quality.
 
@@ -28,6 +31,44 @@ The data utilized for this project comprises measurements of air quality obtaine
 
 ## Key Insights
 The primary observations include fluctuations in PM2.5 levels throughout different seasons, displaying elevated concentrations during colder months. Additionally, a correlation exists between PM2.5 levels and weather elements such as temperature and humidity. Furthermore, discernible trends and patterns are evident from the time series analysis.
+
+## How to Run the Dashboard
+
+To run the Air Quality Analysis Dashboard, follow these steps:
+
+### Setup Environment
+
+1. **Create and Activate a Python Environment**:
+   - If using Conda (ensure [Conda](https://docs.conda.io/en/latest/) is installed):
+     ```
+     conda create --name airquality-ds python=3.11
+     conda activate airquality-ds
+     ```
+   - If using venv (standard Python environment tool):
+     ```
+     python -m venv airquality-ds
+     source airquality-ds/bin/activate  # On Windows use `airquality-ds\Scripts\activate`
+     ```
+
+2. **Install Required Packages**:
+   - The following packages are necessary for running the analysis and the dashboard:
+     ```
+     pip install pandas numpy scipy matplotlib seaborn streamlit statsmodels
+     ```
+
+     or you can do
+     ```
+     pip install -r requirements.txt
+     ```
+### Run the Streamlit App
+
+1. **Navigate to the Project Directory** where `dashboard.py` is located.
+
+2. **Run the Streamlit App**:
+    ```
+    streamlit run dashboard.py
+    ``` 
+
 
 ## About Me
 - **Name**: Galih Kuncoro Jati
